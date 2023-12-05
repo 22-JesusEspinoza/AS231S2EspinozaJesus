@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Registro Valle Grande</title>
+    <link rel="shortcut icon" href="/img/Logo-VG_Tpt02.png" />
+
+</head>
+
+<body>
+
+    <form id="myForm" action="/enviar" method="post">
+        <h1>BIENVENIDOS</h1>
+
+        <label>Elección de Carrera:</label>
+        <label><input type="radio" id="Carrera" name="Carrera" value="analisis_sistemas" required> Análisis de Sistemas</label>
+        <label><input type="radio" id="Carrera" name="Carrera" value="produccion_agraria" required> Producción Agraria</label>
+
+        <br>
+
+        <label for="NombresApellidos">Apellidos y Nombres:</label>
+        <input type="text" id="NombresApellidos" name="NombresApellidos" required>
+
+        <br>
+
+        <label for="Dni">Número de DNI:</label>
+        <input type="text" id="Dni" name="Dni" required>
+
+        <br>
+
+        <label for="FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="text" id="FechaNacimiento" name="FechaNacimiento" placeholder="dd/mm/aaaa" required>
+
+        <br>
+
+        <label for="Email">Correo Institucional:</label>
+        <input type="email" id="Email" name="Email" required>
+
+        <br>
+
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="Contraseña" name="Contraseña" required>
+
+        <input type="checkbox" id="mostrarContraseña"> Mostrar Contraseña
+
+        <br>
+
+        <input type="checkbox" id="Terminos" name="Terminos" onchange="habilitarBoton()" required>
+        <label for="Terminos">Aceptar los Términos y Condiciones</label>
+
+        <br>
+
+        <input type="submit" value="Enviar" disabled>
+
+    </form>
+</body>
+    <script src="/js/script.js"></script>
+</html>
