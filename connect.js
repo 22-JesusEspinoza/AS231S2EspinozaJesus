@@ -50,7 +50,7 @@ app.post("/enviar", function (req, res) {
     let Contraseña = datos.Contraseña;
     let Terminos = datos.Terminos;
 
-    let Enviar = "INSERT INTO Estudiante (Carrera, NombresApellidos, Dni, DATE FORMAT(FechaNacimiento,'%d/%m/%Y'), Email, Contraseña, Terminos) VALUES ('" + Carrera + "','" + NombresApellidos + "','" + Dni + "','" + FechaNacimiento + "','" + Email + "','" + Contraseña + "','" + Terminos + "')";
+    let Enviar = "INSERT INTO Estudiante (Carrera, NombresApellidos, Dni, FechaNacimiento, Email, Contraseña, Terminos) VALUES ('" + Carrera + "','" + NombresApellidos + "','" + Dni + "','" + FechaNacimiento + "','" + Email + "','" + Contraseña + "','" + Terminos + "')";
 
     conect1.query(Enviar, function (error) {
         if (error) {
